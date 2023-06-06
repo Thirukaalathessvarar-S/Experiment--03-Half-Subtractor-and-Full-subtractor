@@ -38,20 +38,17 @@ Program to design a half subtractor and full subtractor circuit and verify its t
 Developed by: Thirukaalathessvarar S
 RegisterNumber:  212222230161
 ```
-
-```
 ### Half Sub
 ```
 module halfsub(A,B,Diff,Borrow);
 input A,B;
 output Diff,Borrow;
-wire X;
+wire X
 xor(Diff,A,B);
 not(X,A);
 and(Borrow,X,B);
 endmodule
 ```
-### Full Sub
 ```
 module fullsub(A,B,C,Difference,Borrow);
 input A,B,C;
